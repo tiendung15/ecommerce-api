@@ -9,7 +9,7 @@ for (const key of required) {
 
 module.exports = {
   nodeEnv: process.env.NODE_ENV || 'development',
-  port: Number(process.env.PORT) || 3000,
+  port: Number(process.env.PORT) || 3001,
   jwtSecret: process.env.JWT_SECRET,
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || '1d',
 };

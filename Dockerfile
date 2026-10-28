@@ -15,7 +15,7 @@ RUN npx prisma generate
 COPY src ./src
 
 ENV NODE_ENV=production
-EXPOSE 3000
+EXPOSE 3001
 
 # Áp migration rồi mới khởi động app
 CMD ["sh", "-c", "npx prisma migrate deploy && node src/server.js"]
